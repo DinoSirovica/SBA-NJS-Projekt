@@ -1,0 +1,7 @@
+.danger-div {
+  color: var(--text-color);
+  background-color: rgba(255, 0, 0, 0.47);
+  border: 1px solid red;
+  margin-top: 10px;
+  padding: 5px;
+}

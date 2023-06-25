@@ -1,0 +1,84 @@
+.vertical-navbar {
+  min-height: 100vh;
+  align-items: center;
+  background-color: var(--bkg-nav-color);
+  border-right: 2px solid var(--nav-border-color);
+  padding: 10px;
+}
+
+.vertical-navbar a {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.vertical-navbar a:hover {
+  background-color: var(--bkg-color);
+  cursor: pointer;
+}
+
+.content {
+  padding: 20px;
+}
+
+.border-nav {
+  border-bottom: 1px solid var(--nav-border-color);
+}
+
+.hor-nav {
+  background-color: var(--bkg-nav-color);
+  justify-content: end;
+  align-content: center;
+  min-height: 60px;
+}
+
+.hor-nav-but {
+  border-radius: 10px;
+  padding: 0 15px;
+  margin-right: 10px;
+  width: fit-content;
+  height: 2.5em;
+}
+
+.hor-nav-but-round {
+  border-radius: 100%;
+  width: fit-content;
+}
+
+.hor-nav-select {
+  margin-right: 20px;
+  border-radius: 5px;
+  width: 3em;
+}
+
+.hor-nav-link {
+  color: var(--text-color);
+  text-decoration: none;
+  margin-right: 20px;
+  width: fit-content;
+  align-self: center;
+}
+
+.hor-nav-link:hover, .hor-nav-link:active {
+  color: var(--text-color-hover);
+  text-decoration: none;
+}
+
+.login-profile-span {
+  color: var(--text-color);
+  align-self: center;
+  margin-right: 10px;
+  text-align: end;
+}
+
+.position-dropdown {
+  margin-top: 2.2em;
+}
+
+.dropdown-button {
+  background-color: var(--bkg-nav-color);
+  color: var(--text-color);
+}
+
+

@@ -1,0 +1,4 @@
+.table *:not(.btn, i) {
+  background-color: var(--bkg-color-table);
+  color: var(--text-color);
+}

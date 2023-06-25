@@ -1,0 +1,83 @@
+<form (ngSubmit)="onSubmit()" [formGroup]="transactionForm" class="pt-5 mt-5 w-50">
+  <div class="form-group">
+    <label for="amount">Amount (in euros)</label>
+    <input class="form-control" formControlName="amount" id="amount" required type="number">
+    <div
+      *ngIf="transactionForm.get('amount')?.invalid && (transactionForm.get('amount')?.dirty || transactionForm.get('amount')?.touched)">
+      <div *ngIf="transactionForm.get('amount')?.errors?.['required']" class="text-danger">Amount is required.</div>
+      <div *ngIf="transactionForm.get('amount')?.errors?.['min']" class="text-danger">Amount must be greater than or
+        equal to 0.
+      </div>
+      <div *ngIf="transactionForm.get('amount')?.errors?.['numeric']" class="text-danger">Amount must be a number.</div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="description">Description</label>
+    <input class="form-control" formControlName="description" id="description" required type="text">
+    <div
+      *ngIf="transactionForm.get('description')?.invalid && (transactionForm.get('description')?.dirty || transactionForm.get('description')?.touched)">
+      <div *ngIf="transactionForm.get('description')?.errors?.['required']" class="text-danger">Description is
+        required.
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="accountHolderName">Account Holder Name</label>
+    <input class="form-control" formControlName="accountHolderName" id="accountHolderName" required type="text">
+    <div
+      *ngIf="transactionForm.get('accountHolderName')?.invalid && (transactionForm.get('accountHolderName')?.dirty || transactionForm.get('accountHolderName')?.touched)">
+      <div *ngIf="transactionForm.get('accountHolderName')?.errors?.['required']" class="text-danger">Account Holder
+        Name is required.
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="accountNumber">Account Number</label>
+    <input class="form-control" formControlName="accountNumber" id="accountNumber" required type="text">
+    <div
+      *ngIf="transactionForm.get('accountNumber')?.invalid && (transactionForm.get('accountNumber')?.dirty || transactionForm.get('accountNumber')?.touched)"
+      class="text-danger">
+      <div *ngIf="transactionForm.get('accountNumber')?.errors?.['required']" class="text-danger">Account Number is
+        required.
+      </div>
+      <div *ngIf="transactionForm.get('accountNumber')?.errors?.['minlength']" class="text-danger">Account Number must
+        be at least 21 characters long.
+      </div>
+      <div *ngIf="transactionForm.get('accountNumber')?.errors?.['maxlength']" class="text-danger">Account Number cannot
+        exceed 21 characters.
+      </div>
+      <div *ngIf="transactionForm.get('accountNumber')?.errors?.['numeric']" class="text-danger">Account Number must be
+        a numeric value.
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="senderAccountNumber">Sender Account Number</label>
+    <input class="form-control" formControlName="senderAccountNumber" id="senderAccountNumber" required type="text">
+    <div
+      *ngIf="transactionForm.get('senderAccountNumber')?.invalid && (transactionForm.get('senderAccountNumber')?.dirty || transactionForm.get('senderAccountNumber')?.touched)"
+      class="text-danger">
+      <div *ngIf="transactionForm.get('senderAccountNumber')?.errors?.['required']" class="text-danger">Account Number
+        is required.
+      </div>
+      <div *ngIf="transactionForm.get('senderAccountNumber')?.errors?.['minlength']" class="text-danger">Account Number
+        must be at least 21 characters long.
+      </div>
+      <div *ngIf="transactionForm.get('senderAccountNumber')?.errors?.['maxlength']" class="text-danger">Account Number
+        cannot exceed 21 characters.
+      </div>
+      <div *ngIf="transactionForm.get('senderAccountNumber')?.errors?.['numeric']" class="text-danger">Account Number
+        must be a numeric value.
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="errorMessages !==''" class="danger-div my-2">
+    {{errorMessages}}
+  </div>
+  <button [disabled]="transactionForm.invalid" class="btn btn-primary w-100" type="submit">Submit</button>
+</form>

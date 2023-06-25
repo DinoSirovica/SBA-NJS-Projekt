@@ -1,0 +1,44 @@
+<div class="row ms-3 mt-5">
+  <h1>All users:</h1>
+</div>
+<div class="row">
+  <div class="col-md-14">
+    <table class="table">
+      <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone number</th>
+        <th>Date of Birth</th>
+        <th>Personal ID Number</th>
+        <th>Role</th>
+        <th>Admin</th>
+        <th>Delete</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let user of allUsers">
+        <td>{{ user.firstName }} {{user.lastName}}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.phoneNumber }}</td>
+        <td>{{ user.dateOfBirth }}</td>
+        <td>{{ user.personalId }}</td>
+        <td>{{ user.role }}</td>
+        <td>
+          <button (click)="changeUserRole(user.id, user.role)"
+                  [class]="user.role !=='ADMIN'? 'btn btn-primary' : ' btn btn-secondary'">
+            <i [class]="user.role !=='ADMIN'? 'bi bi-plus-lg' : ' bi bi-x-lg'"></i>
+          </button>
+        </td>
+        <td>
+          <button (click)="deleteUser(user.id)" class="btn btn-danger">
+            <i class="bi bi-trash-fill"></i>
+          </button>
+        </td>
+        <!-- Add more cells for additional columns -->
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+

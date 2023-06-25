@@ -1,0 +1,50 @@
+<div class="container mt-5">
+  <div class="row">
+
+    <div class="col-md-7">
+      <div class=" profile">
+        <h2 class="text-start ps-5">Profile</h2>
+        <div class="profile-info ">
+          <div class="info-row ">
+            <label>First name:</label>
+            <span *ngIf="!isEditing">{{ firstName }}</span>
+            <input *ngIf="isEditing" [(ngModel)]="firstName" type="text" value="{{ firstName }}">
+          </div>
+          <div class="info-row">
+            <label>Last name:</label>
+            <span *ngIf="!isEditing">{{ lastName }}</span>
+            <input *ngIf="isEditing" [(ngModel)]="lastName" type="text">
+          </div>
+          <div class="info-row">
+            <label>Email:</label>
+            <span *ngIf="!isEditing">{{ email }}</span>
+            <input *ngIf="isEditing" [(ngModel)]="email" type="email">
+          </div>
+          <div class="info-row">
+            <label>Date of Birth:</label>
+            <span *ngIf="!isEditing">{{ dateOfBirth }}</span>
+            <input *ngIf="isEditing" [(ngModel)]="dateOfBirth" type="date">
+          </div>
+          <div class="info-row">
+            <label>Phone number:</label>
+            <span *ngIf="!isEditing">{{ phoneNumber }}</span>
+            <input *ngIf="isEditing" [(ngModel)]="phoneNumber" type="text">
+          </div>
+          <div class="info-row">
+            <label>PersonalId:</label>
+            <span *ngIf="!isEditing">{{ personalId }}</span>
+            <input *ngIf="isEditing" [(ngModel)]="personalId" type="text">
+          </div>
+          <div class="row">
+            <button (click)="toggleEditing()" class="edit-button col-md-4">{{ isEditing ? 'Save' : 'Edit' }}</button>
+            <div class="col-md-1"></div>
+            <button (click)="deleteProfile()" class="btn btn-danger col-md-4">Delete profile</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <div class="profile-img"></div>
+    </div>
+  </div>
+</div>

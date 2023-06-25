@@ -1,0 +1,48 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-5">
+      <div>
+        <h1>Welcome to SBA</h1>
+        <p class="lead">The Student Bank App for Easy Money Management</p>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="features">
+            <h2>Key Features</h2>
+            <ul class="list-unstyled">
+              <li>consectetur adipiscing elit</li>
+              <li>sed do eiusmod tempor incididunt</li>
+              <li>ut labore et dolore magna aliqua</li>
+              <li>Ut enim ad minim veniam</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="benefits">
+            <h2>Benefits of SBA</h2>
+            <ul class="list-unstyled">
+              <li>Ut enim ad minim veniam</li>
+              <li>quis nostrud exercitation ullamco</li>
+              <li>laboris nisi ut aliquip ex ea commodo consequat</li>
+              <li>Duis aute irure dolor in reprehenderit</li>
+              <li>voluptate velit esse cillum dolore eu fugiat nulla pariatur</li>
+            </ul>
+          </div>
+
+          <div class="call-to-action mt-4">
+            <h2>Join SBA Today!</h2>
+            <p>Sign up for free and start managing your money with ease.</p>
+            <a *ngIf="sessionStorage.getItem('authenticated') != 'true'" class="btn btn-primary" routerLink="/register">Get
+              Started</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-7">
+      <div class="home-image"></div>
+    </div>
+  </div>
+</div>

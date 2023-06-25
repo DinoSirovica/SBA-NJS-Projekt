@@ -1,0 +1,35 @@
+.card-body {
+  color: black;
+  background: linear-gradient(145deg, #6E4CE5FF 30%, rgba(255, 99, 99, 0.89));
+  box-shadow: 0.4rem 0.3rem 0.1rem var(--card-shadow);
+
+}
+
+.card-body *:not(button, i) {
+  color: black;
+  background: transparent;
+  border: none;
+}
+
+.btn-danger-acc, .btn-danger-acc * {
+  background-color: transparent;
+  border: none;
+  font-size: 1.4em;
+  color: #ffffff;
+}
+
+.btn-danger-acc:hover, .btn-danger:hover * {
+  transition: ease-in-out 0.3s;
+  border: none;
+  font-size: 1.5em;
+  color: var(--btn-txt-color);
+}
+
+.btn-danger-acc:hover {
+  background-color: var(--btn-bg-color);
+}
+
+.account:hover {
+  cursor: pointer;
+  box-shadow: 0.1rem 0.1rem 0.2rem 0.2rem var(--card-shadow);
+}

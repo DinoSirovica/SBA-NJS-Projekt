@@ -1,0 +1,61 @@
+<div class="container-fluid">
+  <div class="row mt-4">
+    <div class="col-md-10 text-center">
+      <button (click)="changeStatus()" [disabled]="!isPayouts"
+              class="{{ !isPayouts ? 'btn-not-active' : 'btn-active' }} btn-primary border-left" type="button">
+        Payments
+      </button>
+      <button (click)="changeStatus()" [disabled]="isPayouts"
+              class="{{ !isPayouts ? 'btn-active' : 'btn-not-active' }} btn-primary border-right" type="button">
+        Payouts
+      </button>
+    </div>
+    <div class="col-md-2 text-center">
+    <button routerLink="/transfer/new"> New transaction <b><i class="bi bi-plus-lg"></i></b></button>
+    </div>
+  </div>
+
+  <div class="row my-2 mb-4 style=" style="border-bottom: 2px solid var(--text-color)">
+    <h1 *ngIf="!isAdmin">{{isPayouts ? 'My Payouts:' : 'My Payments:'}}</h1>
+    <h1 *ngIf="isAdmin">{{isPayouts ? 'All Payouts:' : 'All Payments:'}}</h1>
+  </div>
+  <div class="row text-center bg-color-change">
+    <div *ngIf="isPayouts">
+      <div *ngFor="let payout of payouts" class="row border-row">
+        <div class="col-md-10 pb-3">
+          Payout from your account {{payout.senderName}} - {{payout.senderAccountNumber}} to account
+          <b>{{payout.reciverAccountNumber}} owned by {{payout.receiverName}}</b> on day
+          {{getDateFromString(payout.date)}} at {{getTimeFromString(payout.date)}} with
+          description: {{payout.description}}
+        </div>
+        <div class="col-md-2">
+          <div class="row bg-color-change-div">
+            <h4 class="text-danger col-md-9">-{{payout.amount}} EUR <i class="bi bi-arrow-down-square-fill"></i></h4>
+            <button (click)="deletePayout(payout.id)" *ngIf="isAdmin" class="btn btn-danger col-2">
+              <i class="bi bi-trash-fill"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="!isPayouts">
+      <div *ngFor="let payment of payments" class="row border-row">
+        <div class="col-md-10 pb-3">
+          Payment recived from <b>{{payment.senderName}} - {{payment.senderAccountNumber}}</b> to your account
+          {{payment.receiverName}} - {{payment.reciverAccountNumber}} on day
+          {{getDateFromString(payment.date)}} at {{getTimeFromString(payment.date)}} with
+          description: {{payment.description}}
+        </div>
+        <div class="col-md-2">
+          <div class="row bg-color-change-div">
+            <h4 class="text-success col-md-9">+{{payment.amount}} EUR <i class="bi bi-arrow-up-square-fill"></i></h4>
+            <button (click)="deletePayment(payment.id)" *ngIf="isAdmin" class="btn btn-danger col-2">
+              <i class="bi bi-trash-fill"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,109 @@
+.add-temp-account {
+  border-radius: 6px;
+  padding: 20px;
+  width: 23em;
+  height: inherit;
+  border: 2px dashed var(--logo-color);
+  color: var(--logo-color);
+  background-color: rgba(253, 191, 8, 0.14);
+
+}
+
+.add-temp-account:hover {
+  background-color: rgba(253, 191, 8, 0.34);
+  cursor: pointer;
+}
+
+.add-temp-account p {
+  color: var(--logo-color);
+}
+
+.card-container {
+  border: none;
+  border-radius: 6px;
+  padding: 20px;
+  width: 23em;
+
+}
+
+.card-color {
+  background: linear-gradient(to right, #81B2F1FF 40%, #6E4CE5FF) !important;
+  box-shadow: 0.4rem 0.3rem 0.1rem var(--card-shadow);
+
+}
+
+.temp-card-color {
+  background: linear-gradient(to right, #b662e7 10%, rgba(255, 99, 99, 0.89) 100%) !important;
+  box-shadow: 0.4rem 0.3rem 0.1rem var(--card-shadow-temp);
+}
+
+.card-color:hover {
+  box-shadow: 0.1rem 0.1rem 0.2rem 0.2rem var(--card-shadow);
+  cursor: pointer;
+}
+
+.temp-card-color:hover {
+  cursor: pointer;
+  box-shadow: 0.1rem 0.1rem 0.2rem 0.2rem var(--card-shadow-temp);
+
+}
+
+.add-sign {
+  font-weight: bolder;
+  font-size: 3em;
+}
+
+.card-details {
+  background-color: inherit;
+  margin-bottom: 15px;
+}
+
+.card-number {
+  background-color: inherit;
+  font-size: 25px;
+  font-weight: bold;
+  color: #000;
+}
+
+.expiration {
+  background-color: inherit;
+  font-size: 14px;
+  color: #5b5556;
+}
+
+.expiration-label {
+  background-color: inherit;
+  margin-right: 5px;
+}
+
+.expiration-date {
+  font-weight: bold;
+}
+
+.cvv {
+  background-color: inherit;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+}
+
+.image-master-card {
+  background: url("../../../assets/images/Mastercard_2019_logo.svg") no-repeat right;
+  background-size: contain;
+  height: 60px;
+}
+
+h5 {
+  font-weight: bold;
+  color: #2d216e;
+  font-size: 20px;
+}
+
+.btn-danger {
+  position: absolute;
+  top: 0.5em;
+  right: 1em;
+}
+
+
+

@@ -1,1 +1,88 @@
-/* You can add global styles to this file, and also import other style files */
+
+body {
+  --text-color: #222;
+  --text-color-hover: #666;
+  --logo-color: #ff8800;
+  --btn-bg-color-secondary: rgba(11, 88, 160, 0.2);
+  --bkg-nav-color: #eee;
+  --nav-border-color: rgba(189, 189, 217, 0.4);
+  --bkg-color: #fff;
+  --btn-txt-color: white;
+  --btn-bg-color: rgb(11, 88, 160);
+  --btn-bg-color-hover: rgb(11, 88, 160, 0.8);
+  --card-shadow: rgba(0, 62, 131, 0.15);
+  --card-shadow-temp: #C24E4F5E;
+  --arrow-green: #00cc00;
+  --arrow-red: red;
+  --bkg-color-table: rgba(173, 198, 227, 0.07);
+}
+body.dark-theme {
+  --text-color: #eeeeee;
+  --text-color-hover: #cccccc;
+  --logo-color: #fdbf08;
+  --btn-bg-color-secondary: #fdbf08;
+  --bkg-color: #28282c;
+  --bkg-nav-color: #303134;
+  --nav-border-color: #3a3c4d;
+  --btn-txt-color: rgb(46, 43, 43);
+  --btn-bg-color: rgb(20, 211, 195);
+  --btn-bg-color-hover: rgb(20, 211, 195, 0.8);
+  --card-shadow: rgba(129, 178, 241, 0.2);
+  --card-shadow-temp: rgba(182, 98, 231, 0.4);
+  --arrow-green: #00b600;
+  --arrow-red: red;
+  --bkg-color-table: rgba(173, 198, 227, 0.07);
+
+}
+
+body, div {
+  background: var(--bkg-color);
+  color: var(--text-color);
+}
+
+h1,
+p {
+  color: var(--text-color);
+}
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 2px;
+  color: var(--btn-txt-color);
+  background-color: var(--btn-bg-color);
+}
+
+button:hover {
+  background-color: var(--btn-bg-color-hover);
+}
+
+.logo{
+  background: none;
+  font-weight: bolder;
+  font-size: 2.5rem;
+  color: var(--logo-color);
+}
+.logo:hover, .logo:focus, .logo:active{
+  background: none;
+}
+.show-password{
+  all: unset;
+  z-index: 10;
+  font-size: 1.5em;
+  color: rgba(0, 0, 0, 0.41);
+  position: absolute;
+  right: 10px;
+  bottom: 2px;
+}
+.show-password:hover{
+ background: none;
+  color: rgba(0, 0, 0, 0.53);
+}
+input[type="text"], input[type="password"], input[type="email"], input[type="date"]{
+  border: 1px solid #bbb!important;
+  background-color: #eee!important;
+  box-shadow: none!important;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

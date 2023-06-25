@@ -1,0 +1,47 @@
+<div class="row m-auto mt-5">
+  <div *ngFor="let account of accounts" class="col-md-6 mt-2">
+    <div class="card account">
+      <div (click)="accountClick(account)" class="card-header">
+        <h2>{{account.accountName}}</h2>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div (click)="accountClick(account)" class="col-6 ">
+            <div class="account-number">
+              <h4>Balance:</h4>
+              <h1>{{account.currency}} {{account.balance}}</h1>
+            </div>
+            <div class="balance">
+              <h4>Account Number:</h4>
+              <h3>{{account.accountNumber}}</h3>
+            </div>
+            <div class="owner">
+              Owner: {{userOb.firstName}} {{userOb.lastName}}
+            </div>
+          </div>
+          <div class="col-6 text-end" style="align-self: end">
+            <button (click)="deleteAccount(account.accountNumber)" *ngIf="account.accountName !== 'Main account'"
+                    class="btn btn-danger-acc mt-2 ">
+              <i class="bi bi-trash-fill"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mt-4">
+  <button (click)="addNewAcc = true" *ngIf="!addNewAcc" class="btn btn-primary">Add Account</button>
+  <div *ngIf="addNewAcc" class="mt-4">
+    <div class="row m-auto">
+      <input [(ngModel)]="newAccountName" class="col-2" placeholder="Account Name" type="text">
+    </div>
+    <div class="row m-auto g-2">
+      <button (click)="addNewAccount()" class="btn btn-primary col-1 g-1 me-1">Add</button>
+      <button (click)="addNewAcc = false" class="btn btn-danger col-1 g-1">Cancel</button>
+    </div>
+
+  </div>
+</div>
+<app-card></app-card>

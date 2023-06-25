@@ -1,0 +1,36 @@
+.btn-not-active {
+  pointer-events: none;
+  cursor: all-scroll;
+  opacity: 0.5;
+}
+
+btn-active {
+  cursor: pointer;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.border-left {
+  border-radius: 1rem 0 0 1rem;
+}
+
+.border-right {
+  border-radius: 0 1rem 1rem 0;
+}
+
+.bg-color-change {
+}
+
+.bg-color-change > * > * > * {
+  padding-top: 2em;
+  background-color: rgba(45, 87, 131, 0.24);
+}
+
+.bg-color-change-div {
+  background-color: transparent;
+}
+
+.border-row {
+  border-bottom: 2px solid var(--nav-border-color);
+  border-top: 2px solid var(--nav-border-color);
+}
