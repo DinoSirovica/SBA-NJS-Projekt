@@ -22,7 +22,7 @@ import {ProfileComponent} from './components/profile/profile.component';
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'login', component: UserLoginComponent},
-  {path: 'signup', component: UserSignUpComponent},
+  {path: 'register', component: UserSignUpComponent},
   {path: 'account', component: AccountComponent, canActivate: [AuthGuard]},
   {path: 'card', component: CardComponent, canActivate: [AuthGuard]},
   {path: 'transfer/:accountId', component: NewTransactionComponent, canActivate: [AuthGuard]},
