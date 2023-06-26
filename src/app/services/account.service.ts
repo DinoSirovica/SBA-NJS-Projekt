@@ -172,4 +172,8 @@ export class AccountService {
       })
     );
   }
+
+  updateAccount(account: Account) {
+    return this.http.put('https://njs-projekt-sba-default-rtdb.europe-west1.firebasedatabase.app/accounts/' + account.id + '.json', {...account});
+  }
 }

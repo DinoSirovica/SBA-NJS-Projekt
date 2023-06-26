@@ -34,3 +34,10 @@ btn-active {
   border-bottom: 2px solid var(--nav-border-color);
   border-top: 2px solid var(--nav-border-color);
 }
+label{
+  color: var(--text-color);
+  font-size: 1.2em;
+}
+input[type=text]{
+  border-radius: 5px;
+}

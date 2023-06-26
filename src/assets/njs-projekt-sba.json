@@ -1,0 +1,372 @@
+{
+  "accounts": {
+    "-NYid5kMFiPV-nTXNR5b": {
+      "accountName": "Main account",
+      "accountNumber": "729311063082277400000",
+      "balance": 206,
+      "currency": "EUR",
+      "id": "-NYid5kMFiPV-nTXNR5b",
+      "userId": "-NYbhHiQOFqjLSEqW26L"
+    },
+    "-NYsMglI0BB7vvhTRoVg": {
+      "accountName": "Main account",
+      "accountNumber": 130045280885625360000,
+      "balance": 720,
+      "currency": "EUR",
+      "id": "-NYsMglI0BB7vvhTRoVg",
+      "userId": "-NYsMgj94bZrXoklfLna"
+    },
+    "-NYsR-T6FqLYO0ODQkLG": {
+      "accountName": "Main account",
+      "accountNumber": 301988785618441600000,
+      "balance": 20,
+      "currency": "EUR",
+      "id": "-NYsR-T6FqLYO0ODQkLG",
+      "userId": "-NYsR-RJY6nPlXMZZ__k"
+    },
+    "-NYsS49FAW-V-k5Z4dr1": {
+      "accountName": "Štednja",
+      "accountNumber": 628475980870018700000,
+      "balance": 15,
+      "currency": "EUR",
+      "id": "-NYsS49FAW-V-k5Z4dr1",
+      "userId": "-NYsR-RJY6nPlXMZZ__k"
+    },
+    "-NYsW3lxUG_A7HBd1Lm3": {
+      "accountName": "Štednja",
+      "accountNumber": 575854780082396460000,
+      "balance": 960,
+      "currency": "EUR",
+      "id": "-NYsW3lxUG_A7HBd1Lm3",
+      "userId": "-NYsMgj94bZrXoklfLna"
+    }
+  },
+  "cards": {
+    "-NYj3vHLlpNE-OQnArKk": {
+      "cardNumber": 3477691285952186,
+      "cvv": 934,
+      "expirationMonth": "5",
+      "expirationYear": "2028",
+      "type": "long term",
+      "userId": "-NYbhHiQOFqjLSEqW26L"
+    },
+    "-NYsMgmidgSSlLm7WUey": {
+      "cardNumber": 6061498483968577,
+      "cvv": 405,
+      "expirationMonth": "5",
+      "expirationYear": "2028",
+      "type": "long term",
+      "userId": "-NYsMgj94bZrXoklfLna"
+    },
+    "-NYsR-UtD3hN0y2uFtWs": {
+      "cardNumber": 8910804963714866,
+      "cvv": 761,
+      "expirationMonth": "5",
+      "expirationYear": "2028",
+      "type": "long term",
+      "userId": "-NYsR-RJY6nPlXMZZ__k"
+    }
+  },
+  "payments": {
+    "-NYlSCyqUA_GjUoukNQW": {
+      "amount": 50,
+      "date": "Sun Jun 25 2023 09:29:07 GMT+0200 (Central European Summer Time)",
+      "description": "Test 2",
+      "id": "",
+      "receiverId": "-NYbhHiQOFqjLSEqW26L",
+      "receiverName": "Dino Siravica",
+      "reciverAccountNumber": "729311063082277400000",
+      "senderAccountNumber": "757300299077909100000",
+      "senderId": "-NYbhHiQOFqjLSEqW26L",
+      "senderName": "admin admin"
+    },
+    "-NYl_P4ooHg9m1yBkgNV": {
+      "amount": 6,
+      "date": "Sun Jun 25 2023 10:04:54 GMT+0200 (Central European Summer Time)",
+      "description": "dasfdsafsad",
+      "id": "",
+      "receiverId": "-NYlVPKqy9pC_rS-z1Mj",
+      "receiverName": "Dino Sirovica",
+      "reciverAccountNumber": "726664066111691200000",
+      "senderAccountNumber": "902161913287562900000",
+      "senderId": "-NYlVPKqy9pC_rS-z1Mj",
+      "senderName": "Dino Sirovica"
+    },
+    "-NYl_gz3xcxYviXD17FU": {
+      "amount": 14,
+      "date": "Sun Jun 25 2023 10:06:11 GMT+0200 (Central European Summer Time)",
+      "description": "fdsgfdsgdf",
+      "id": "",
+      "receiverId": "-NYbhHiQOFqjLSEqW26L",
+      "receiverName": "admin admin",
+      "reciverAccountNumber": "729311063082277400000",
+      "senderAccountNumber": "902161913287562900000",
+      "senderId": "-NYlVPKqy9pC_rS-z1Mj",
+      "senderName": "Dino Sirovica"
+    },
+    "-NYsRWwHd12-kRBxhnZN": {
+      "amount": 200,
+      "date": "Mon Jun 26 2023 18:03:28 GMT+0200 (Central European Summer Time)",
+      "description": "Prijenos na vlastiti račun",
+      "id": "",
+      "receiverId": "-NYsMgj94bZrXoklfLna",
+      "receiverName": "Pero Peric",
+      "reciverAccountNumber": "130045280885625360000",
+      "senderAccountNumber": "300097242820873000000",
+      "senderId": "-NYsMgj94bZrXoklfLna",
+      "senderName": "Pero Peric"
+    },
+    "-NYsRicrh7psynMZm_vF": {
+      "amount": 30,
+      "date": "Mon Jun 26 2023 18:04:20 GMT+0200 (Central European Summer Time)",
+      "description": "Vraćam za kolače",
+      "id": "",
+      "receiverId": "-NYsR-RJY6nPlXMZZ__k",
+      "receiverName": "Marko Marić",
+      "reciverAccountNumber": "301988785618441600000",
+      "senderAccountNumber": "300097242820873000000",
+      "senderId": "-NYsMgj94bZrXoklfLna",
+      "senderName": "Pero Peric"
+    },
+    "-NYsRuVLEL8tklCEcyD3": {
+      "amount": 5,
+      "date": "Mon Jun 26 2023 18:05:09 GMT+0200 (Central European Summer Time)",
+      "description": "Za kavu",
+      "id": "",
+      "receiverId": "-NYsR-RJY6nPlXMZZ__k",
+      "receiverName": "Marko Marić",
+      "reciverAccountNumber": "301988785618441600000",
+      "senderAccountNumber": "300097242820873000000",
+      "senderId": "-NYsMgj94bZrXoklfLna",
+      "senderName": "Pero Peric"
+    },
+    "-NYsSMEPkqyMDoyMQvx9": {
+      "amount": 15,
+      "date": "Mon Jun 26 2023 18:07:06 GMT+0200 (Central European Summer Time)",
+      "description": "Za Putovanje",
+      "id": "",
+      "receiverId": "-NYsR-RJY6nPlXMZZ__k",
+      "receiverName": "Marko Marić",
+      "reciverAccountNumber": "628475980870018700000",
+      "senderAccountNumber": "301988785618441600000",
+      "senderId": "-NYsR-RJY6nPlXMZZ__k",
+      "senderName": "Marko Marić"
+    },
+    "-NYsVEPk_E7g4XI8Y6xY": {
+      "amount": 2500,
+      "date": "Mon Jun 26 2023 18:19:41 GMT+0200 (Central European Summer Time)",
+      "description": "Balance transfer for deleted account called Privremeni račun",
+      "id": "",
+      "receiverId": "-NYsMgj94bZrXoklfLna",
+      "receiverName": "Pero Peric",
+      "reciverAccountNumber": 284068958054645430000,
+      "senderAccountNumber": 130045280885625360000,
+      "senderId": "-NYsMgj94bZrXoklfLna",
+      "senderName": "Pero Peric"
+    },
+    "-NYs_tR6Sj8uGJWT3Y_1": {
+      "amount": 20,
+      "date": "Mon Jun 26 2023 18:44:24 GMT+0200 (Central European Summer Time)",
+      "description": "Prijenos",
+      "id": "",
+      "receiverId": "-NYsMgj94bZrXoklfLna",
+      "receiverName": "Pero Peric",
+      "reciverAccountNumber": "130045280885625360000",
+      "senderAccountNumber": "575854780082396460000",
+      "senderId": "-NYsMgj94bZrXoklfLna",
+      "senderName": "Pero Peric"
+    },
+    "-NYsaNIQYpR_v6KoyWs7": {
+      "amount": 480,
+      "date": "Mon Jun 26 2023 18:46:30 GMT+0200 (Central European Summer Time)",
+      "description": "Balance transfer for deleted account called Štednja",
+      "id": "",
+      "receiverId": "-NYsMgj94bZrXoklfLna",
+      "receiverName": "Pero Peric",
+      "reciverAccountNumber": 575854780082396460000,
+      "senderAccountNumber": 130045280885625360000,
+      "senderId": "-NYsMgj94bZrXoklfLna",
+      "senderName": "Pero Peric"
+    }
+  },
+  "payouts": {
+    "-NYlSCzhhBitGIO2rZeE": {
+      "amount": 50,
+      "date": "Sun Jun 25 2023 09:29:07 GMT+0200 (Central European Summer Time)",
+      "description": "Test 2",
+      "id": "",
+      "receiverId": "-NYbhHiQOFqjLSEqW26L",
+      "receiverName": "admin admin",
+      "reciverAccountNumber": "729311063082277400000",
+      "senderAccountNumber": "757300299077909100000",
+      "senderId": "-NYbhHiQOFqjLSEqW26L",
+      "senderName": "admin admin"
+    },
+    "-NYl_P4ooHg9m1yBkgNU": {
+      "amount": 6,
+      "date": "Sun Jun 25 2023 10:04:54 GMT+0200 (Central European Summer Time)",
+      "description": "dasfdsafsad",
+      "id": "",
+      "receiverId": "-NYlVPKqy9pC_rS-z1Mj",
+      "receiverName": "Dino Sirovica",
+      "reciverAccountNumber": "726664066111691200000",
+      "senderAccountNumber": "902161913287562900000",
+      "senderId": "-NYlVPKqy9pC_rS-z1Mj",
+      "senderName": "Dino Sirovica"
+    },
+    "-NYl_h-IG4I0Zk7NREnD": {
+      "amount": 14,
+      "date": "Sun Jun 25 2023 10:06:11 GMT+0200 (Central European Summer Time)",
+      "description": "fdsgfdsgdf",
+      "id": "",
+      "receiverId": "-NYbhHiQOFqjLSEqW26L",
+      "receiverName": "admin admin",
+      "reciverAccountNumber": "729311063082277400000",
+      "senderAccountNumber": "902161913287562900000",
+      "senderId": "-NYlVPKqy9pC_rS-z1Mj",
+      "senderName": "Dino Sirovica"
+    },
+    "-NYsRWx1XBrZRUMJZ3Dc": {
+      "amount": 200,
+      "date": "Mon Jun 26 2023 18:03:28 GMT+0200 (Central European Summer Time)",
+      "description": "Prijenos na vlastiti račun",
+      "id": "",
+      "receiverId": "-NYsMgj94bZrXoklfLna",
+      "receiverName": "Pero Peric",
+      "reciverAccountNumber": "130045280885625360000",
+      "senderAccountNumber": "300097242820873000000",
+      "senderId": "-NYsMgj94bZrXoklfLna",
+      "senderName": "Pero Peric"
+    },
+    "-NYsRicsbkN9OSw0hVZE": {
+      "amount": 30,
+      "date": "Mon Jun 26 2023 18:04:20 GMT+0200 (Central European Summer Time)",
+      "description": "Vraćam za kolače",
+      "id": "",
+      "receiverId": "-NYsR-RJY6nPlXMZZ__k",
+      "receiverName": "Marko Marić",
+      "reciverAccountNumber": "301988785618441600000",
+      "senderAccountNumber": "300097242820873000000",
+      "senderId": "-NYsMgj94bZrXoklfLna",
+      "senderName": "Pero Peric"
+    },
+    "-NYsRuVIu0QmFOJHtJ9J": {
+      "amount": 5,
+      "date": "Mon Jun 26 2023 18:05:09 GMT+0200 (Central European Summer Time)",
+      "description": "Za kavu",
+      "id": "",
+      "receiverId": "-NYsR-RJY6nPlXMZZ__k",
+      "receiverName": "Marko Marić",
+      "reciverAccountNumber": "301988785618441600000",
+      "senderAccountNumber": "300097242820873000000",
+      "senderId": "-NYsMgj94bZrXoklfLna",
+      "senderName": "Pero Peric"
+    },
+    "-NYsSMEMk7kHDsGPb8uF": {
+      "amount": 15,
+      "date": "Mon Jun 26 2023 18:07:06 GMT+0200 (Central European Summer Time)",
+      "description": "Za Putovanje",
+      "id": "",
+      "receiverId": "-NYsR-RJY6nPlXMZZ__k",
+      "receiverName": "Marko Marić",
+      "reciverAccountNumber": "628475980870018700000",
+      "senderAccountNumber": "301988785618441600000",
+      "senderId": "-NYsR-RJY6nPlXMZZ__k",
+      "senderName": "Marko Marić"
+    },
+    "-NYsVEQWKXThTtg6X9sA": {
+      "amount": 2500,
+      "date": "Mon Jun 26 2023 18:19:41 GMT+0200 (Central European Summer Time)",
+      "description": "Balance transfer for deleted account called Privremeni račun",
+      "id": "",
+      "receiverId": "-NYsMgj94bZrXoklfLna",
+      "receiverName": "Pero Peric",
+      "reciverAccountNumber": 284068958054645430000,
+      "senderAccountNumber": 130045280885625360000,
+      "senderId": "-NYsMgj94bZrXoklfLna",
+      "senderName": "Pero Peric"
+    },
+    "-NYs_tRxak_cGqOKV5ag": {
+      "amount": 20,
+      "date": "Mon Jun 26 2023 18:44:24 GMT+0200 (Central European Summer Time)",
+      "description": "Prijenos",
+      "id": "",
+      "receiverId": "-NYsMgj94bZrXoklfLna",
+      "receiverName": "Pero Peric",
+      "reciverAccountNumber": "130045280885625360000",
+      "senderAccountNumber": "575854780082396460000",
+      "senderId": "-NYsMgj94bZrXoklfLna",
+      "senderName": "Pero Peric"
+    },
+    "-NYsaNINM66v52Lp4dD5": {
+      "amount": 480,
+      "date": "Mon Jun 26 2023 18:46:30 GMT+0200 (Central European Summer Time)",
+      "description": "Balance transfer for deleted account called Štednja",
+      "id": "",
+      "receiverId": "-NYsMgj94bZrXoklfLna",
+      "receiverName": "Pero Peric",
+      "reciverAccountNumber": 575854780082396460000,
+      "senderAccountNumber": 130045280885625360000,
+      "senderId": "-NYsMgj94bZrXoklfLna",
+      "senderName": "Pero Peric"
+    }
+  },
+  "tempcards": {
+    "-NYsN5ih-BNVuvuuz1Er": {
+      "cardNumber": 9222374041115312,
+      "cvv": 574,
+      "expirationMonth": "5",
+      "expirationYear": "2028",
+      "type": "temporary",
+      "userId": "-NYsMgj94bZrXoklfLna"
+    },
+    "-NYsS-8wh6ByWDt1tHEd": {
+      "cardNumber": 6726370563060223,
+      "cvv": 880,
+      "expirationMonth": "5",
+      "expirationYear": "2028",
+      "type": "temporary",
+      "userId": "-NYsR-RJY6nPlXMZZ__k"
+    },
+    "-NYsS-Pq7gNlvyAnE_CX": {
+      "cardNumber": 4247916000341746,
+      "cvv": 895,
+      "expirationMonth": "5",
+      "expirationYear": "2028",
+      "type": "temporary",
+      "userId": "-NYsR-RJY6nPlXMZZ__k"
+    }
+  },
+  "users": {
+    "-NYbhHiQOFqjLSEqW26L": {
+      "dateOfBirth": "2001-12-08",
+      "email": "admin@sba.hr",
+      "firstName": "admin",
+      "lastName": "admin",
+      "password": "e03bb7d05290a87e40f0d5af83726f9331eece498f4272a36246063bb1f191d9",
+      "personalId": "2254789564",
+      "phoneNumber": "1800049532",
+      "role": "ADMIN"
+    },
+    "-NYsMgj94bZrXoklfLna": {
+      "dateOfBirth": "1983-07-21",
+      "email": "pperic@tvz.hr",
+      "firstName": "Pero",
+      "lastName": "Peric",
+      "password": "cea11e5daa88de837a8c9304331a2e94aa56e747b1c361b2fb03dd81f03d63f4",
+      "personalId": "7875564464",
+      "phoneNumber": "0987564231",
+      "role": "ADMIN"
+    },
+    "-NYsR-RJY6nPlXMZZ__k": {
+      "dateOfBirth": "2023-06-24",
+      "email": "marko@tvz.hr",
+      "firstName": "Marko",
+      "lastName": "Marić",
+      "password": "3054ef18ade494ab728d68baa6443b7d8783f557a0f95255c18423c5ec14462f",
+      "personalId": "9289687486",
+      "phoneNumber": "0954723458",
+      "role": "USER"
+    }
+  }
+}

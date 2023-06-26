@@ -6,6 +6,7 @@ import {Account} from "../../models/account.model";
 import {User} from "../../models/user.model";
 import {UserService} from "../../services/user.service";
 
+
 @Component({
   selector: 'app-new-transaction',
   templateUrl: './new-transaction.component.html',
@@ -59,10 +60,11 @@ export class NewTransactionComponent implements OnInit {
       const amount = this.transactionForm.get('amount')?.value;
       const accNum = this.transactionForm.get('accountNumber')?.value;
       const holderName = this.transactionForm.get('accountHolderName')?.value;
+      const senderAccNum = this.transactionForm.get('senderAccountNumber')?.value;
       if (this.selectedAccNumber) {
         const onAccountBalance = this.accounts.find(x => x.accountNumber == this.selectedAccNumber)?.balance;
-        console.log(this.selectedAccNumber, this.accounts);
-        if (onAccountBalance)
+        if (this.isValidSenderAccountNumber(senderAccNum, this.accounts)) {
+        if (onAccountBalance) {
           if (amount <= onAccountBalance) {
             this.accountService.getAccounts().subscribe(
               (res: Account[]) => {
@@ -98,11 +100,25 @@ export class NewTransactionComponent implements OnInit {
             this.errorMessages = 'Not enough money on account';
             return;
           }
+        } else {
+          this.errorMessages = 'Not enough money on account';
+          return;
+        }
+      }
+        else {
+          this.errorMessages = 'Sender account number is invalid';
+          return;
+        }
       }
     }
 
   }
 
-
+  isValidSenderAccountNumber(senderAccNum: any, accounts: Account[]) {
+    console.log(senderAccNum);
+    const account = accounts.find(x => x.accountNumber == senderAccNum);
+    console.log(account);
+    return !!account;
+  }
 }
 

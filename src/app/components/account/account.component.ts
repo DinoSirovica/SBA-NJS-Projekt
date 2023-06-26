@@ -62,9 +62,27 @@ export class AccountComponent implements OnInit {
     });
 
     this.accounts[mainIndex].balance += this.accounts[deleteIndex].balance;
-    this.accountService.deleteAccount(this.accounts[deleteIndex].id).subscribe(
+    this.accountService.updateAccount(this.accounts[mainIndex]).subscribe(
       () => {
-        this.accounts.splice(deleteIndex, 1);
+        if(this.accounts[deleteIndex].balance > 0)
+        {
+          this.accountService.makeTransactions({
+            date: new Date().toString(),
+            amount: this.accounts[deleteIndex].balance,
+            senderName: this.userOb.firstName + ' ' + this.userOb.lastName,
+            senderId: this.userOb.id,
+            receiverId: this.userOb.id,
+            receiverName: this.userOb.firstName + ' ' + this.userOb.lastName,
+            description: "Balance transfer for deleted account called " + this.accounts[deleteIndex].accountName,
+            accountNumber: this.accounts[deleteIndex].accountNumber,
+            senderAccountNumber: this.accounts[mainIndex].accountNumber,
+          });
+        }
+        this.accountService.deleteAccount(this.accounts[deleteIndex].id).subscribe(
+          () => {
+            this.accounts.splice(deleteIndex, 1);
+          }
+        );
       }
     );
   }

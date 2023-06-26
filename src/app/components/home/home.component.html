@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container mt-4">
   <div class="row">
     <div class="col-md-5">
       <div>
@@ -11,10 +11,10 @@
           <div class="features">
             <h2>Key Features</h2>
             <ul class="list-unstyled">
-              <li>consectetur adipiscing elit</li>
-              <li>sed do eiusmod tempor incididunt</li>
-              <li>ut labore et dolore magna aliqua</li>
-              <li>Ut enim ad minim veniam</li>
+              <li>Money management made easy</li>
+              <li>Pay anywhere online</li>
+              <li>Store and manage your money securely</li>
+              <li>No contract, leave any time</li>
             </ul>
           </div>
         </div>
@@ -24,18 +24,16 @@
           <div class="benefits">
             <h2>Benefits of SBA</h2>
             <ul class="list-unstyled">
-              <li>Ut enim ad minim veniam</li>
-              <li>quis nostrud exercitation ullamco</li>
-              <li>laboris nisi ut aliquip ex ea commodo consequat</li>
-              <li>Duis aute irure dolor in reprehenderit</li>
-              <li>voluptate velit esse cillum dolore eu fugiat nulla pariatur</li>
+              <li>Have up to 3 accounts at one time</li>
+              <li>Have up to 3 one-time disposable cards</li>
+              <li>Easily search your transactions </li>
             </ul>
           </div>
 
-          <div class="call-to-action mt-4">
+          <div *ngIf="sessionStorage.getItem('authenticated') != 'true'"  class="call-to-action mt-4">
             <h2>Join SBA Today!</h2>
             <p>Sign up for free and start managing your money with ease.</p>
-            <a *ngIf="sessionStorage.getItem('authenticated') != 'true'" class="btn btn-primary" routerLink="/register">Get
+            <a class="btn btn-primary" routerLink="/register">Get
               Started</a>
           </div>
         </div>
